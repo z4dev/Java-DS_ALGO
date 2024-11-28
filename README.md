@@ -4,15 +4,6 @@ Dr Adnan
 
 https://sites.google.com/view/engeneerblog2022/%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A9-%D8%A7%D9%84%D9%86%D8%AC%D8%A7%D8%AD-2024/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9-%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A9-%D8%BA%D8%B2%D8%A9?authuser=0&pli=1
 
----
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/326eac8e-14e3-4aa9-8ea2-8a18d30fb6c4/68013a15-f28b-4f5e-80ba-914353ff6528/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/326eac8e-14e3-4aa9-8ea2-8a18d30fb6c4/38c4876a-8623-491f-9f5d-021e9a0747a1/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/326eac8e-14e3-4aa9-8ea2-8a18d30fb6c4/eae55f9d-a774-4955-b10e-9500f9d1272b/image.png)
-
----
 
 ```java
 public class HelloWorld {
@@ -26,7 +17,6 @@ public class HelloWorld {
 }
 ```
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/326eac8e-14e3-4aa9-8ea2-8a18d30fb6c4/d6dc04c7-5dbf-44ee-83eb-ffb4ec720e40/image.png)
 
 ---
 
@@ -409,13 +399,11 @@ Negative
 
 ## Loops :
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/326eac8e-14e3-4aa9-8ea2-8a18d30fb6c4/d3ec56ed-ceaf-4d04-92fd-2d39603edbd7/image.png)
 
 ---
 
 Arrays : 
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/326eac8e-14e3-4aa9-8ea2-8a18d30fb6c4/caf41521-2a51-4c71-85c6-68b2ea364229/image.png)
 
 ---
 
@@ -557,7 +545,6 @@ boolean result = new UserMethods().priNT()
 
 ---
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/326eac8e-14e3-4aa9-8ea2-8a18d30fb6c4/67f87cc8-da4c-4c60-ae92-31ee7b490e47/image.png)
 
 → this is geometric series = n(n+1) / 2 
 
