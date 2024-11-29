@@ -237,7 +237,7 @@ class HelloWorld{
         System.out.println("Hello World");
         Solution s = new Solution();
         System.out.println(s.x);
-      
+    
     }
 }
 
@@ -255,7 +255,7 @@ class HelloWorld{
     public static void main(String[] args){
         System.out.println("Hello World");
         System.out.println(Solution.x=5);
-      
+    
     }
 }
 
@@ -282,7 +282,7 @@ class HelloWorld{
         new Solution();
         new Solution();
         System.out.println(Solution.x);
-      
+    
     }
 }
 
@@ -552,7 +552,7 @@ public static findMaxIndex (int[]A , int L , in R ) {
  
     if (A[i] > A[max]) 
        max = A[i]
-     
+   
  } 
  
  return max ;  
@@ -569,10 +569,119 @@ OOP started
 ---
 
 ```java
+Class Variables (static) var
 
-   public static void print(Object input) {
-        System.err.println(input);
+```java
+access_modifier class className {
+data_members;
+constructor;
+methodes;
+blocks;
+
+}
+
+access_modifier without using it the scope is Package-Private
+```
+
+---
+
+- remember , you can not have more than one class is public . Also the one name should be like the file name
+- you can not define anything outside class forexample
+
+```java
+package Java ;
+
+    public static void print(Object text){
+          System.out.println(text);
     }
-  
-    Object DataType is almost Like  any 
+
+class HelloWorld {
+    static int x = 5 ; 
+    static int y = 7 ; 
+    public static void main(String[] args) {
+        HelloWorld instance1 = new HelloWorld();
+        Printer.print(instance1.x);
+    }
+}
+
+//error solution
+
+class Printer {
+    public static void print(Object text){
+          System.out.println(text);
+    }
+}
+```
+
+---
+
+**static** variable vs instance variable
+
+```
+class HelloWorld {
+     int x = 5 ; 
+     int y = 7 ; 
+     HelloWorld(){
+        x+=1;
+     }
+    public static void main(String[] args) {
+        new HelloWorld();  // here the increment applied at the instance it self not the original x 
+        new HelloWorld(); // also the same thing here 
+        Printer.print(new HelloWorld().x);
+
+   
+    }
+}
+
+```
+
+```java
+how to use print in java
+
+package Java ;
+
+import static Java.Printer.print; // static import
+
+class HelloWorld {
+     int x = 5 ; 
+     int y = 7 ; 
+     HelloWorld(){
+        x+=1;
+     }
+    public static void main(String[] args) {
+        new HelloWorld();  // here the increment applied at the instance it self not the original x 
+        new HelloWorld(); // also the same thing here 
+        print(new HelloWorld().x);
+
+   
+    }
+}
+
+--- Printer.java code 
+
+package Java;
+
+public class Printer {
+    public static void print(Object text){
+        System.err.println(text);
+    }
+}
+
+```
+
+---
+
+```java
+final is use to :
+- disallows of override a function
+- disallows reassign value to varible
+```
+
+public static void print(Object input) {
+System.err.println(input);
+}
+
+Object DataType is almost Like  any 
+```
+
 ```
