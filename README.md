@@ -1,19 +1,14 @@
-
-
-
-
 ```java
 public class HelloWorld {
 
    public static void main(string[] args){
-     
+   
      System.out.println("Hello,Woeld")
    
    }
 
 }
 ```
-
 
 ---
 
@@ -43,13 +38,13 @@ The `static` keyword in Java indicates that a method or variable belongs to the 
 
 ---
 
-Fix error 
+Fix error
 
 ```java
 The public type Counter must be defined in its own fileJava(16777541)
 ```
 
-for 
+for
 
 ```java
 
@@ -77,7 +72,7 @@ public class Counter {
 
 ```
 
-solve 
+solve
 
 If you want to keep both classes in the same file, remove the `public` keyword from the `Counter` class. Only one class in a file can be declared as `public`, and that class must match the file name.
 
@@ -111,14 +106,14 @@ public class Main {
 
 ---
 
-Why here when remove access modifer `public` for the main function this error occurred 
+Why here when remove access modifer `public` for the main function this error occurred
 
 ```java
 
 Main.js
 
 public class Main {
-    
+  
      static void main(String[] args) {
         System.out.println("Hello World");
     }
@@ -126,7 +121,7 @@ public class Main {
 
 ```
 
-error : 
+error :
 
 ```java
 Main method not found in class Main, please define the main method as:
@@ -182,7 +177,7 @@ If the class is not `public`, it will have **package-private** (default) visibil
 
 ---
 
-Weird Thing 
+Weird Thing
 
 ```java
 Main.java
@@ -207,7 +202,7 @@ class HelloWorld{
 
 Both `Main` and `HelloWorld` have their own `main` methods, and each can act as the entry point for a program.
 
-for example you can remove the Main and there is no matter 
+for example you can remove the Main and there is no matter
 
 ```java
 
@@ -221,7 +216,7 @@ class HelloWorld{
 
 ```
 
-Reason 
+Reason
 
 Since neither `Main` nor `HelloWorld` is declared `public`, Java does not enforce the rule that the file name must match the name of the `public` class.
 
@@ -229,7 +224,7 @@ You can save the file with any name (e.g., `Test.java`), compile it, and run eit
 
 ---
 
-Examples 
+Examples
 
 ```java
 
@@ -242,7 +237,7 @@ class HelloWorld{
         System.out.println("Hello World");
         Solution s = new Solution();
         System.out.println(s.x);
-        
+      
     }
 }
 
@@ -260,17 +255,17 @@ class HelloWorld{
     public static void main(String[] args){
         System.out.println("Hello World");
         System.out.println(Solution.x=5);
-        
+      
     }
 }
 
 ```
 
-here there is no error 
+here there is no error
 
 ---
 
-As Static is shardable between all clases 
+As Static is shardable between all clases
 
 ```java
 
@@ -287,17 +282,17 @@ class HelloWorld{
         new Solution();
         new Solution();
         System.out.println(Solution.x);
-        
+      
     }
 }
 
 ```
 
-all access the same (x) when put static .. means when modifies it in one all is going to modify 
+all access the same (x) when put static .. means when modifies it in one all is going to modify
 
 ---
 
-How constant the variable ?? use `final`  int x 
+How constant the variable ?? use `final`  int x
 
 ---
 
@@ -316,18 +311,18 @@ String s2 = "Hello";
 System.out.println(s1.equals(s2)); 
 ```
 
-→ True as the content is the same 
+→ True as the content is the same
 
 ### **`compareTo` Method (value):int**
 
 - The `compareTo` method **compares two strings lexicographically(الترتيب الاعجمي ، مثل الاوبجيكت)**.
 
- →It is based on the sequence of characters in the strings and their position in the Unicode or ASCII table. Essentially, lexicographical order is similar to alphabetical order but extends to all characters, including numbers, special characters, and upper/lowercase distinctions.
+→It is based on the sequence of characters in the strings and their position in the Unicode or ASCII table. Essentially, lexicographical order is similar to alphabetical order but extends to all characters, including numbers, special characters, and upper/lowercase distinctions.
 
 - It returns:
-    - `0` if both strings are equal.
-    - A negative number if the first string is lexicographically less than the second string.
-    - A positive number if the first string is lexicographically greater than the second string.
+  - `0` if both strings are equal.
+  - A negative number if the first string is lexicographically less than the second string.
+  - A positive number if the first string is lexicographically greater than the second string.
 
 In summary:
 
@@ -362,15 +357,15 @@ then it returns (-2)
 ### Step-by-Step ASCII Analysis:
 
 1. **Compare the first characters of `a` and `b`**:
-    - `a.charAt(0)` is `'a'` (ASCII value = 97).
-    - `b.charAt(0)` is `'b'` (ASCII value = 98).
-    
-    Since `97 < 98`, string `a` is **lexicographically smaller** than string `b`, and the comparison stops here. The result of `a.compareTo(b)` will be negative.
-    
+
+   - `a.charAt(0)` is `'a'` (ASCII value = 97).
+   - `b.charAt(0)` is `'b'` (ASCII value = 98).
+
+   Since `97 < 98`, string `a` is **lexicographically smaller** than string `b`, and the comparison stops here. The result of `a.compareTo(b)` will be negative.
 
 ---
 
-Another examples 
+Another examples
 
 ```java
 String a = "ba";
@@ -396,11 +391,9 @@ Negative
 
 ## Loops :
 
-
 ---
 
-Arrays : 
-
+Arrays :
 
 ---
 
@@ -422,22 +415,23 @@ that means save 10 places in the memory for the z array
 
 ---
  to print the memory address for single int 
- ```
- class PracticeProgram{
-    public static void main(String[] args) {
-        int m[] = new int[10];
-        int hashcode = System.identityHashCode(m[2]); // return int hashcode
-        System.out.println(hashcode); // return 0
-    }
+```
+
+class PracticeProgram{
+public static void main(String[] args) {
+int m[] = new int[10];
+int hashcode = System.identityHashCode(m[2]); // return int hashcode
+System.out.println(hashcode); // return 0
+}
 }
 ``
 
 If you tried directly to pirnt the arra it will causes an printing the address
 of the arr
 
-To summarize, 657381135 is the result of calling System.identityHashCode() 
+To summarize, 657381135 is the result of calling System.identityHashCode()
 on m[2], and it doesn't give a direct memory address but a unique identifier
- for that specific value.
+for that specific value.
 
 ```
 
@@ -542,8 +536,7 @@ boolean result = new UserMethods().priNT()
 
 ---
 
-
-→ this is geometric series = n(n+1) / 2 
+→ this is geometric series = n(n+1) / 2
 
 - smallest number between L and R
 
@@ -552,14 +545,14 @@ public static findMaxIndex (int[]A , int L , in R ) {
 
   if(A == null || A.length == 0 || L > R || L > A.length) 
      throw new IllegalErrorArgumet("Inavalid input")
-     
+   
   
  max = L 
  for(int i = L+1 ; i < R.length ; i++){
  
     if (A[i] > A[max]) 
        max = A[i]
-       
+     
  } 
  
  return max ;  
@@ -571,14 +564,15 @@ public static findMaxIndex (int[]A , int L , in R ) {
 
 ---
 
-OOP started 
+OOP started
 
 ---
 
 ```java
+
    public static void print(Object input) {
         System.err.println(input);
     }
-    
+  
     Object DataType is almost Like  any 
 ```
