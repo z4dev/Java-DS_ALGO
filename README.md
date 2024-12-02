@@ -237,7 +237,7 @@ class HelloWorld{
         System.out.println("Hello World");
         Solution s = new Solution();
         System.out.println(s.x);
-    
+  
     }
 }
 
@@ -255,7 +255,7 @@ class HelloWorld{
     public static void main(String[] args){
         System.out.println("Hello World");
         System.out.println(Solution.x=5);
-    
+  
     }
 }
 
@@ -282,7 +282,7 @@ class HelloWorld{
         new Solution();
         new Solution();
         System.out.println(Solution.x);
-    
+  
     }
 }
 
@@ -681,7 +681,23 @@ public static void print(Object input) {
 System.err.println(input);
 }
 
-Object DataType is almost Like  any 
-```
+# What is Shadowing in Java ?
 
+```java
+class Apply {
+    private int age; 
+    private int name;
+    Apply(){}
+    Apply(int age, int name){
+        this.age = age;
+        this.name = name;
+    }
+    String display(){
+        return "Age: " + age + " Name: " + name;
+    }
+    void setter(int age, int name){
+        age = age;
+        name = name;
+    }
+}
 ```
