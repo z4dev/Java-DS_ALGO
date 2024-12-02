@@ -703,3 +703,7 @@ class Apply {
 ```
 `It Happends when you try to put the parameter name the same name `
 `as the class memeber property name `
+
+
+
+`important to talk : the static methods are finals means you can not override them`
