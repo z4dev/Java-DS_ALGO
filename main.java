@@ -1,51 +1,84 @@
 package Java ;
-
 import static  Java.Printer.print; 
 
 
-class Apply {
-    private int age; 
-    private int name;
-    Apply(){}
-    Apply(int x, int y){
-       age = x;
-       name = y;
+
+
+
+class Shape {
+    double area(){
+      return 0 ; 
     }
-    String display(){
-        return "Age: " + age + " Name: " + name;
-    }
-    void setter(int age, int name){
-        this.age = age;
-        this.name = name;
-    }
+    void draw(){}
 }
 
-// super => parent class 
-class Pre extends Apply{
 
-    boolean isGeeks = true;
+class Rectangle extends Shape {
+    private double width;
+    private double height;
 
-    Pre(){
-        super();
+    Rectangle(){}
+
+    Rectangle(double w , double h){
+        this.width = w;
+        this.height =h ;
     }
 
-    Pre(int age, int name){
-        super(age, name);
+    double area(){
+        return width * height;
     }
 
-    @Override
-     String display(){
-         String output = super.display();
-         setter(40,30);
-         return output + " isGeeks: " + this.isGeeks;
-         
-    }
+    void draw(){}
 }
+
+
+class Triangle extends Shape {
+    private double base;
+    private double height;
+
+    Triangle(){}
+
+    Triangle(double b , double h){
+        this.base = b;
+        this.height =h ;
+    }
+
+    double area(){
+        return base * height * 0.5;
+    }
+
+    void draw(){}
+}
+
+class Circle extends Shape {
+    private double radius;
+
+    Circle(){}
+
+    Circle(double r){
+        this.radius = r;
+    }
+
+    double area(){
+        return this.radius * this.radius * Math.PI;
+    }
+
+    void draw(){}
+}
+
 
 class HelloWorld {
     public static void main(String[] args) {
-        Pre obj = new Pre(10, 2);
-        print(obj.display());
+        Shape O[]=new Shape[10];
+        O[0] = new Rectangle(2.0,3.04);
+        O[1] = new Triangle(2.0,3.04);
+        O[2] = new Circle(2.0);
+
+        for(int i=0;i<3;i++){
+            print(O[i].area());
+        }
+
+        
     }
 }
 
