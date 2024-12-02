@@ -681,7 +681,7 @@ public static void print(Object input) {
 System.err.println(input);
 }
 
-# What is Shadowing in Java ?
+# What is the Warning (Shadowing) in Java ?
 
 ```java
 class Apply {
@@ -701,3 +701,5 @@ class Apply {
     }
 }
 ```
+`It Happends when you try to put the parameter name the same name `
+`as the class memeber name `
