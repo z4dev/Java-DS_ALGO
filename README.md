@@ -702,4 +702,4 @@ class Apply {
 }
 ```
 `It Happends when you try to put the parameter name the same name `
-`as the class memeber name `
+`as the class memeber property name `
