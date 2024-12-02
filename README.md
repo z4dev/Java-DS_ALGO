@@ -728,3 +728,51 @@ class Apply {
 
 
 `important to talk : the static methods are finals means you can not override them`
+
+
+
+---
+
+In the shape examples in the polymorphism  ,I do not need to make object from it how to do that ?? 
+
+use abstract  well face issue that
+
+```java
+double returns 0  , that why I put it before using the abstract 
+
+* you can not create object from abstracted class 
+abstract ClassName {
+abstract methodName(){}
+
+}
+* also the methods does the same if it was abstracted you can not call it 
+If you do not wnat to provide implmentation use it .. .
+```
+
+---
+
+Way 2 use 
+
+## Interface
+
+---
+
+is a completely  abstract class … means all the members should be abstract even properties and methods 
+
+- must be implemented  instead of extends
+- can not use to create object
+- methods do not have body
+- are by default  public and abstractly
+- hide data user should not see . and he only can see the data in the interface as the name suggest .
+- java does not support multiple interface  also allows single inheritance
+
+```java
+interface ShapeInterface {
+double area(){};
+void draw(){};
+}
+
+class Circle implements ShapeInterface {
+
+}
+```
