@@ -704,6 +704,27 @@ class Apply {
 `It Happends when you try to put the parameter name the same name `
 `as the class memeber property name `
 
+`to avoid it , change the name of params and you are free use this or not`
+
+```Java
+class Apply {
+    private int age; 
+    private int name;
+    Apply(){}
+    Apply(int x, int y){
+       age = x;
+       name = y;
+    }
+    String display(){
+        return "Age: " + age + " Name: " + name;
+    }
+    void setter(int age, int name){
+        this.age = age;
+        this.name = name;
+    }
+}
+```
+
 
 
 `important to talk : the static methods are finals means you can not override them`

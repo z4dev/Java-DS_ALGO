@@ -7,16 +7,16 @@ class Apply {
     private int age; 
     private int name;
     Apply(){}
-    Apply(int age, int name){
-        this.age = age;
-        this.name = name;
+    Apply(int x, int y){
+       age = x;
+       name = y;
     }
     String display(){
         return "Age: " + age + " Name: " + name;
     }
     void setter(int age, int name){
-        age = age;
-        name = name;
+        this.age = age;
+        this.name = name;
     }
 }
 
