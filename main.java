@@ -3,82 +3,31 @@ import static  Java.Printer.print;
 
 
 
-
-
-class Shape {
-    double area(){
-      return 0 ; 
+class MyValue<K,V> {
+     V value;
+     K key; 
+        
+     MyValue(K k , V v ){
+       this.value = v ;
+       this.key = k ;
     }
-    void draw(){}
+
+    public MyValue<K, V> getValue(K key, V value) {
+        return new MyValue<>(key, value);
+    }
+
+     // Override toString() to print key and value
+     @Override
+     public String toString() {
+         return "Key: " + key + ", Value: " + value;
+     }
 }
-
-
-class Rectangle extends Shape {
-    private double width;
-    private double height;
-
-    Rectangle(){}
-
-    Rectangle(double w , double h){
-        this.width = w;
-        this.height =h ;
-    }
-
-    double area(){
-        return width * height;
-    }
-
-    void draw(){}
-}
-
-
-class Triangle extends Shape {
-    private double base;
-    private double height;
-
-    Triangle(){}
-
-    Triangle(double b , double h){
-        this.base = b;
-        this.height =h ;
-    }
-
-    double area(){
-        return base * height * 0.5;
-    }
-
-    void draw(){}
-}
-
-class Circle extends Shape {
-    private double radius;
-
-    Circle(){}
-
-    Circle(double r){
-        this.radius = r;
-    }
-
-    double area(){
-        return this.radius * this.radius * Math.PI;
-    }
-
-    void draw(){}
-}
-
 
 class HelloWorld {
     public static void main(String[] args) {
-        Shape O[]=new Shape[10];
-        O[0] = new Rectangle(2.0,3.04);
-        O[1] = new Triangle(2.0,3.04);
-        O[2] = new Circle(2.0);
-
-        for(int i=0;i<3;i++){
-            print(O[i].area());
-        }
-
-        
+        MyValue<String,Integer> str1 = new MyValue<String,Integer>("hello",10);
+         print(str1.getValue("hellom",10));
+        print(str1); // print the refernce of the object rather that the k,v
     }
 }
 
