@@ -1,6 +1,8 @@
 package Java;
 import static Java.Printer.print;
 
+import java.util.Arrays;
+
 public class MyArrayList<T>{
 
     private static final int DEFAULT_CAPACITY = 10 ;
@@ -15,6 +17,7 @@ public class MyArrayList<T>{
     //add element to the end of the list 
     //at the end of the exists data , not the end of the capacity which it is 10
     public void add(Object element){
+        if(elements.length == size){resize();}
         elements[size] = (T) element ;
         size+=1;
     }
@@ -23,7 +26,7 @@ public class MyArrayList<T>{
     }
     private void resize(){
         int newCapicty = 2 * elements.length;
-        T[] old = elements; 
+        elements = Arrays.copyOf(elements, newCapicty);
 
     }
     public void print(){
@@ -47,6 +50,19 @@ public class MyArrayList<T>{
         myArr.add(true);
         myArr.add("Banana");
         myArr.add("Banana");
+        myArr.add("Banana");
+        myArr.add("Banana");
+        myArr.add("Banana");
+        myArr.add("Banana");
+        myArr.add("Banana");
+        myArr.add("Banana");
+        myArr.add("Banana");
+        myArr.add("Banana");
+        myArr.add("Banana");
+        myArr.add("Banana");
+        myArr.add(10d);
+        myArr.add(3.2f);
+
 
         myArr.print();
         
