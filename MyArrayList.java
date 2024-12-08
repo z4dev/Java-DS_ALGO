@@ -21,6 +21,11 @@ public class MyArrayList<T>{
     public T[] get(){
         return elements;
     }
+    private void resize(){
+        int newCapicty = 2 * elements.length;
+        T[] old = elements; 
+
+    }
     public void print(){
         Java.Printer.print("[");
         for(int i = 0; i < this.size; i++){
